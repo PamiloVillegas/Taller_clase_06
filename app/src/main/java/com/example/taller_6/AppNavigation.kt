@@ -20,9 +20,8 @@ fun AppNavigation() {
         composable("lista") {
 
             ListaScreen(
-                elementos = elementos,
                 onElementoClick = { id ->
-                    navController.navigate("detalle/$id"){
+                    navController.navigate("detalle/$id") {
                         launchSingleTop = true
                     }
                 }
@@ -40,7 +39,7 @@ fun AppNavigation() {
 
             val id = backStackEntry.arguments?.getInt("elementoId") ?: 0
 
-            val elemento = elementos.firstOrNull { it.id == id }
+            val elemento = listaPeliculas.firstOrNull { it.id == id }
 
             if (elemento != null) {
                 DetalleScreen(

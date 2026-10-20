@@ -1,6 +1,6 @@
 package com.example.taller_6
 
-val elementos = listOf(
+val listaPeliculas = listOf(
     Elemento(
         1,
         "Interestelar",

@@ -6,5 +6,6 @@ data class Elemento(
     val categoria: String,
     val descripcionCorta: String,
     val descripcionLarga: String,
-    val icono: String
+    val icono: String,
+    val esFavorito: Boolean = false
 )
